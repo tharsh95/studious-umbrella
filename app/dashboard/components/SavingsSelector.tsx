@@ -21,7 +21,7 @@ export default function SavingsSelector() {
                         className={cn(
                             "px-4 py-2 rounded-lg text-sm font-semibold transition-all border",
                             selected === option
-                                ? "bg-primary-blue text-black border-primary-blue shadow-lg scale-105"
+                                ? "bg-white text-black border-primary-blue shadow-lg scale-105"
                                 : "bg-white text-text-muted border-border-light hover:border-primary-blue/30"
                         )}
                     >

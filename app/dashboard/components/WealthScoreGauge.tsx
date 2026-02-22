@@ -17,9 +17,25 @@ export default function WealthScoreGauge({
   const centerX = 150;
   const centerY = 175;
 
+  const targetScore = 70;
+  const pointsNeeded = targetScore - score;
+
   return (
-    <div className="flex flex-col items-center p-6  ">
-      <div className="relative w-[300px] h-[260px] overflow-hidden">
+    <div className="flex flex-col items-center p-6 relative">
+      {/* Persistent Tooltip */}
+      <div className="absolute top-0 z-10">
+        <div className="bg-white text-text-dark text-[12px] px-4 py-2 rounded-xl shadow-lg whitespace-nowrap relative border border-slate-700/50 backdrop-blur-sm">
+          You need{" "}
+          <span className="text-blue-400 font-bold">
+            +{pointsNeeded} points
+          </span>{" "}
+          to reach a good score of {targetScore}
+          {/* Tooltip Arrow */}
+          <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2.5 h-2.5 bg-slate-800 rotate-45 border-r border-b border-slate-700/50" />
+        </div>
+      </div>
+
+      <div className="relative w-[300px] h-[260px] overflow-hidden mt-4">
         <svg
           height="300"
           width="300"

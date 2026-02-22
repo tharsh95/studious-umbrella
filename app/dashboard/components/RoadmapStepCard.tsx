@@ -26,13 +26,13 @@ export default function RoadmapStepCard({
         "relative p-4 rounded-2xl border transition-all duration-300 min-h-[400px] flex flex-col",
         active
           ? "bg-white border-primary-blue/20 shadow-card border-l-4 border-l-primary-blue"
-          : "bg-card-bg/50 border-border-light",
+          : "bg-gray-100 border-border-light",
         locked && "opacity-70 cursor-not-allowed grayscale-[0.2]",
       )}
     >
       <div className="space-y-4 mb-6">
         <div className="flex justify-between items-start">
-          <span className="text-xs font-bold text-text-muted uppercase tracking-wider">
+          <span className="text-xs font-bold text-danger-red uppercase tracking-wider">
             Step {stepNumber}{" "}
             {active && <span className="text-danger-red ml-2">: Critical</span>}
           </span>

@@ -62,7 +62,10 @@ export default function DashboardPage() {
 
         {/* Wealth Score + Right Section */}
       {/* Top Unified Card */}
-<div className="bg-gradient-to-r from-red-50 via-white to-white border border-border-light rounded-3xl p-2 shadow-subtle">
+<div className="bg-gradient-to-r from-red-50 via-white to-white 
+                border border-border-light 
+                rounded-3xl p-2 
+                shadow-[0_0_25px_rgba(59,130,246,0.45)]">
   <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
 
     {/* LEFT - Gauge */}

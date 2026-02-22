@@ -119,7 +119,7 @@ export default function WealthScoreGauge({
             {score}
           </motion.span>
           <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.25em] mt-2">
-            Wealth Score
+          Current WealthUp Score
           </p>
         </div>
       </div>
